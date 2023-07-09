@@ -25,10 +25,13 @@ This guide will walk you through the steps to host a React.js app on an Apache s
 
    - Open the `httpd.conf` file located in the `xampp/apache/conf` directory.
    - Find the `<Directory>` section that corresponds to your `feng` folder.
-   - Add the following line within the `<Directory>` block:
+   - Add the following line within the `<Directory>` block or at the bottom as as a new block:
 
      ```
-     AllowOverride All
+     <Directory "C:/xampp/htdocs/feng">
+      AllowOverride All
+     </Directory>
+     LoadModule rewrite_module modules/mod_rewrite.so
      ```
 
    - Open the `httpd-vhosts.conf` file located in the `xampp/apache/conf/extra` directory.
