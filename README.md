@@ -16,10 +16,10 @@ This guide will walk you through the steps to host a React.js app on an Apache s
    - Add the following content to the `.htaccess` file:
 
      ```
-Options -MultiViews
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.html [QSA,L]
+      Options -MultiViews
+     RewriteEngine On
+     RewriteCond %{REQUEST_FILENAME} !-f
+     RewriteRule ^ index.html [QSA,L]
 
      ```
 
