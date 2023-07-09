@@ -18,23 +18,12 @@ This guide will walk you through the steps to host a React.js app on an Apache s
      "homepage": "http://localhost/feng" //Directory of folder in htdocs
      ```
 
-2. Update BrowserRouter
-
-   - Open your main React.js app component (usually `App.js` or similar).
-   - Wrap your app content with the `<BrowserRouter>` component and set the `basename` prop:
-
-     ```jsx
-     <BrowserRouter basename="/feng">
-       {/* The rest of your app */}
-     </BrowserRouter>
-     ```
-
-3. Update file paths
+2. Update file paths
 
    - If you have any file references in the `public` folder, make sure to add `/feng` before the existing directory path.
    - For example, if you have an image reference like `<img src="/images/logo.png" alt="Logo" />`, update it to `<img src="/feng/images/logo.png" alt="Logo" />`.
 
-4. Configure Apache Server
+3. Configure Apache Server
 
    - Navigate to the `feng` folder under your XAMPP installation's `htdocs` directory. This is where your React app's build files should be placed.
    - Create an `.htaccess` file in the `feng` folder.
@@ -71,11 +60,11 @@ This guide will walk you through the steps to host a React.js app on an Apache s
      </VirtualHost>
      ```
 
-5. Restart Apache and MySQL
+4. Restart Apache and MySQL
 
    - Restart both the Apache and MySQL servers through the XAMPP control panel.
 
-6. Access Your React App
+5. Access Your React App
 
    - Open your web browser.
    - Visit `http://localhost/feng` (replace with the `ServerName` specified in the virtual host configuration) in the address bar.
