@@ -78,7 +78,7 @@ This guide will walk you through the steps to host a React.js app on an Apache s
 6. Access Your React App
 
    - Open your web browser.
-   - Visit `http://myreactapp.local` (replace with the `ServerName` specified in the virtual host configuration) in the address bar.
+   - Visit `http://localhost/feng` (replace with the `ServerName` specified in the virtual host configuration) in the address bar.
 
 ## Conclusion
 
