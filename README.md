@@ -15,7 +15,7 @@ This guide will walk you through the steps to host a React.js app on an Apache s
    - Add the following line, specifying the base URL for your app:
 
      ```json
-     "homepage": "http://localhost/feng"
+     "homepage": "http://localhost/feng" //Directory of folder in htdocs
      ```
 
 2. Update BrowserRouter
